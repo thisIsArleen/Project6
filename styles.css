@@ -1,0 +1,418 @@
+
+html {
+	height: 100%;
+}
+
+body>header {
+	width: 100%;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: rgb(251, 247, 247);
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 640px;
+}
+
+body>header>*,
+aside,
+div,
+article,
+footer {
+	text-align: center;
+}
+
+main {
+	background-color: white;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* align: center; */
+}
+
+h5 {
+	text-transform: uppercase;
+}
+
+section>img {
+	width: 240px;
+	height: 145px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section>h4 {
+	text-align: center;
+}
+
+section>p {
+	text-align: center;
+	/*	padding: 0px 30px 40px 30px;*/
+	padding: 0px 100px 40px 100px;
+}
+
+footer li {
+	list-style-type: none;
+}
+
+footer {
+	margin-top: 20px;
+	border-top: solid 2px gainsboro;
+}
+
+/* to add margin on footer top and bottom */
+footer>ul {
+	padding: 0px 10px 60px 10px;
+}
+
+article#contact {
+	padding: 0px 100px 0px 100px;
+	font-size: 18px;
+}
+
+/* ===============================
+   Mobile Styles: 0px to 320px
+   ===============================
+*/
+
+@media only screen and (max-width:320px) {
+
+	body {
+		font-size: 32px;
+	}
+
+	header>aside>img {
+		width: 46%;
+		height: 50%;
+	}
+
+	nav.menu>ul {
+		display: flex;
+		padding: 1.5rem;
+		flex-direction: column;
+	}
+
+	nav.menu>ul>li {
+		padding: 10px 5px 10px, 5px;
+		width: 100%;
+		display: inline-block;
+		margin: 5px 0px 7px 0px;
+		font-size: 32px;
+		border-width: thin;
+		background-color: white;
+	}
+
+	li#home,
+	li#portfolio,
+	li#contact {
+		display: none;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	section>p {
+		padding: 0px 30px 40px 30px;
+		font-size: 32px;
+	}
+
+	div>h5,
+	section>h4 {
+		font-size: 36px;
+	}
+
+	section>img {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	article {
+		margin-top: 15%;
+		margin-bottom: 20%;
+	
+	}
+	/* article#contact {
+	
+		font-size: 28px;
+	} */
+
+	li#studentname,
+	li#back {
+		width: 35%;
+	}
+
+	footer>ul {
+		text-align: left;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	footer {
+		margin-top: 20px;
+		border-top: solid 2px gainsboro;
+	}
+
+}
+
+/* ================================
+   Tablet Styles: 321px to 768px
+   ================================
+*/
+@media only screen and (min-width: 321px) and (max-width:768px) {
+
+	body>header {
+		font-size: 32px;
+	}
+
+	body>footer {
+		font-size: 13px;
+	}
+
+	div>h5,
+	section>h4 {
+		font-size: 30px;
+	}
+
+	aside>p {
+		padding: 0px 20px 0px 30px;
+		font-size: 20px;
+	}
+
+	section>p {
+		padding: 0px 25px 40px 25px;
+		font-size: 22px;
+	}
+
+	aside>img {
+		padding: 0px 10px 0px 0px;
+		height: 10%;
+		width: 50%;
+	}
+
+	header>aside>img {
+		width: 46%;
+		height: 50%;
+	}
+
+	nav.menu>ul {
+		display: flex;
+		padding: 1.5rem;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	nav.menu>ul>li {
+		width: 20%;
+		display: inline-block;
+		font-size: 20px;
+	}
+
+	/* to make the aside display in row and reverse */
+
+	aside {
+		padding: 0px 0px 30px 0px;
+		display: flex;
+		flex-direction: row-reverse;
+		text-align: left;
+	}
+
+	section>img {
+		width: 95%;
+		height: 95%;
+		display: block;
+	}
+
+
+	/* to make the section into two column */
+	main>div {
+		height: 5%;
+		width: 100%;
+	}
+
+	main>section {
+		height: 10%;
+		width: 50%;
+	}
+
+	main {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		align-content: stretch;
+	}
+
+	/* Footer */
+	li#back {
+		display: none;
+	}
+
+	li#studentname {
+		width: 60%;
+	}
+
+	li#portfolio {
+		width: 15%;
+	}
+
+	li#home {
+		width: 15%;
+	}
+
+	li#contact {
+		width: 10%;
+	}
+
+	footer>ul {
+		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		
+	}
+}
+/* ================================
+   Desktop Styles: 769px and greater
+   ================================
+*/
+
+@media only screen and (min-width:769px) {
+	body {
+		font-size: 20px;
+	}
+
+	div>h5,
+	section>h4 {
+		font-size: 28px;
+	}
+
+	aside>p {
+		padding: 0px 20px 0px 30px;
+		font-size: 20px;
+	}
+
+	section>p {
+		padding: 0px 25px 40px 25px;
+		font-size: 22px;
+	}
+
+
+	aside>img {
+		padding: 0px 10px 0px 0px;
+		height: 10%;
+		width: 50%;
+	}
+
+	header>aside>img {
+		width: 46%;
+		height: 50%;
+	}
+
+	nav.menu>ul {
+		display: flex;
+		/* padding: 1.5rem; */
+		padding: 20px 7px 0px 20px;
+		flex-direction: row;
+		text-align: right;
+
+	}
+
+	nav.menu>ul>li {
+		width: 40%;
+		display: inline-block;
+		font-size: 20px;
+	}
+
+	/* Header*/
+	
+	header>h2 {
+		padding: 10px 0px 0px 0px;
+	}
+
+	header>* {
+		width: 50%;
+	}
+
+	header {
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* to make the aside display in row and reverse */
+
+	aside {
+		padding: 0px 0px 30px 0px;
+		display: flex;
+		flex-direction: row-reverse;
+		text-align: left;
+	}
+
+	section>img {
+		width: 95%;
+		height: 95%;
+		display: block;
+	}
+
+
+	/* to make the section into 3 columns */
+	main>div {
+		height: 5%;
+		width: 100%;
+	}
+
+	main>section {
+		height: 10%;
+		width: 32%;
+	}
+
+	main {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-content: stretch;
+	}
+
+	li#back {
+		display: none;
+	}
+
+	article#contact {
+		padding: 0px 240px 0px 240px;
+	}
+
+	/* Footer */
+
+	li#back {
+		display: none;
+	}
+
+	li#studentname {
+		width: 60%;
+	}
+
+	li#portfolio {
+		width: 18%;
+	}
+
+	li#home {
+		width: 12%;
+	}
+
+	li#contact {
+		width: 10%;
+	}
+
+	footer>ul {
+		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+}
